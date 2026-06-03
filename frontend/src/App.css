@@ -1,0 +1,22 @@
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.seat-grid button {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.seat-grid button:disabled {
+  background-color: #dc3545 !important;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
